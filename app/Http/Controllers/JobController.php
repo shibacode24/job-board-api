@@ -44,7 +44,7 @@ public function store(Request $request)    // Create new job
 
 public function show($id)    // Fetch a job by ID
 {
-    $job = Job::with('user')->find($id);
+    $job = Job::find($id);
 
     if (!$job) {
         return response()->json(['message' => 'Job not found'], 404);

@@ -33,6 +33,16 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     Route::get('get_applied_job_against_jobid', [ApplicationController::class, 'get_applied_job_against_jobid']);
 
 
+    //This is use when we use the UI 
 
+    // Route::middleware('auth:sanctum')->group(function () {
+    //     Route::apiResource('jobs', JobController::class);
+    //     Route::get('search', [JobController::class, 'search']);
+    //     Route::post('apply', [ApplicationController::class, 'apply']);
+    //     Route::put('update_application/{id}', [ApplicationController::class, 'update_application']);
+    //     Route::get('showUserJobs', [ApplicationController::class, 'showUserJobs']);
+    //     Route::get('index', [ApplicationController::class, 'index']);
+    //     Route::get('get_applied_job_against_jobid', [ApplicationController::class, 'get_applied_job_against_jobid']);
 
+    // });
 
