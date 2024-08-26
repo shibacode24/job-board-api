@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Validator;
 
 class LoginController extends Controller
 {
-    public function register(Request $request) {
+    public function register(Request $request) {      //Create new user
 
         $validator = Validator::make($request->all(), [
             'name' => 'required|string|max:255',
