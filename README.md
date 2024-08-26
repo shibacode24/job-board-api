@@ -62,7 +62,7 @@ A RESTful API for managing job listings and applications, built with Laravel.
         {
             "name": "Shiba Khan",
             "email": "shiba@gmail.com",
-            "password": "password",
+            "password": "######",
         }
         ```
     
@@ -89,7 +89,7 @@ A RESTful API for managing job listings and applications, built with Laravel.
         ```json
         {
             "email": "shiba@gmail.com",
-            "password": "password"
+            "password": "######"
         }
         ```
     
